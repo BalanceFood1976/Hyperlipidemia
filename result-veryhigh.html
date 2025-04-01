@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>자가진단 결과 - 고위험</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #ffebee;
+      font-family: 'Noto Sans KR', sans-serif;
+      padding: 30px 20px;
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .result-box {
+      border-left: 6px solid #d32f2f;
+      padding-left: 16px;
+      margin-bottom: 30px;
+    }
+    .result-box h2, .result-box p, button, span {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .result-box h2 {
+      color: #d32f2f;
+      font-size: 22px;
+      margin-bottom: 10px;
+      animation-delay: 0.3s;
+    }
+    .result-box p {
+      font-size: 16px;
+      line-height: 1.6;
+      animation-delay: 0.6s;
+    }
+    button {
+      margin-top: 20px;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease;
+      animation-delay: 0.9s;
+    }
+    button:hover { background-color: #b71c1c; }
+    button:active { box-shadow: inset 0 2px 4px rgba(0,0,0,0.3); }
+    span {
+      animation-delay: 1.2s;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="result-box">
+    <h2>❗ 고위험군입니다</h2>
+    <p>심각한 건강 위험이 감지됩니다.<br/>즉시 병원에 방문하여 정밀 검사를 받으시기 바랍니다.</p>
+    <p>👉 생활습관을 전면적으로 개선하고, 전문 치료를 병행하세요.</p>
+  </div>
+  <button onclick="window.location.href='index.html'">🔁 다시 테스트하기</button><br>
+  <span style="color: #8cb3be;">
+    <i><a style="color: #8cb3be;" href="https://balancefood1976.tistory.com/">
+      ▶ 블로그 돌아가기</a></i>
+  </span>
+</body>
+</html>
